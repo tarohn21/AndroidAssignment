@@ -28,6 +28,7 @@ public class GitHubInfo {
     private Info info;
     private GitHub gitHub;
     private GHEventInfo eventInfo;
+    private String token = "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";
 
     @Inject
     public GitHubInfo(Info info){
@@ -36,10 +37,8 @@ public class GitHubInfo {
 
     //Connects to github
     public void connectToGitHub() throws IOException {
+        gitHub = GitHub.connectUsingOAuth(token);
         // gitHub = GitHub.connect("tarohn21", "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");
-
-        gitHub = GitHub.connectUsingOAuth("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");
-
     }
 
     public void gitHubCommitInfo(String user, String repo) throws IOException {
