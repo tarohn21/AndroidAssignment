@@ -35,8 +35,12 @@ public class GitHubInfo {
     }
 
     //Connects to github
-    public void connectToGitHub() throws IOException {
-        gitHub = GitHub.connectAnonymously();
+    public void connectToGitHub(String tokenP1, String tokenP2, String tokenP3) throws IOException {
+
+        gitHub = GitHub.connectUsingOAuth(tokenP1 + tokenP2 + tokenP3);
+
+        //Only allows read access
+        //gitHub = GitHub.connectAnonymously();
     }
 
     public void gitHubCommitInfo(String user, String repo) throws IOException {

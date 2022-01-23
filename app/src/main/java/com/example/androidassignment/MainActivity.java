@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         gitHubInfo = component.getGitHubInfo();
 
         try {
-            gitHubInfo.connectToGitHub();
+            gitHubInfo.connectToGitHub("ghp_Uo8Y", "jeMuSHTFIC75wF2rbDyJUzQM0P", "0IUTk7");
             Log.d(TAG, "Connected successfully");
         }
         catch (IOException e) {
