@@ -21,7 +21,7 @@ public class Info {
         return username;
     }
 
-    String getReponame(){
+    String getReponNme(){
         return reponame;
     }
 
