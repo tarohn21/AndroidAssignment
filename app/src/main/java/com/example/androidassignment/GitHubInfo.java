@@ -36,7 +36,7 @@ public class GitHubInfo {
 
     //Connects to github
     public void connectToGitHub() throws IOException {
-         gitHub = GitHub.connect("tarohn21", "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");
+         gitHub = GitHub.connect("tarohn21", "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");
     }
 
     public void gitHubCommitInfo(String user, String repo) throws IOException {
